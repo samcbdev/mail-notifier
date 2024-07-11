@@ -44,7 +44,6 @@ class HandleMail extends Mailable
      */
     public function content(): Content
     {
-        // Log::info(["handleMail" => $this->details['message']]);
         return new Content(
             view: 'mailnotifier::mailTemp',
             with: ['content' => $this->details['content']]
