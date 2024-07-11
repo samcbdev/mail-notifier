@@ -1,0 +1,10 @@
+# Changelog
+
+## Support
+    - PHP 8.2*
+    - Laravel 11*
+
+## [released]
+
+## [1.0.0] - 2024-07-11
+    - Mail Notifier Package Implemented

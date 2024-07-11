@@ -1,0 +1,29 @@
+{
+    "name": "samcbdev/mail-notifier",
+    "description": "Mail template generation based on user's design with custom dynamic variables",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Samcbdev\\MailNotifier\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sam",
+            "email": "84003420+samcbdev@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Samcbdev\\MailNotifier\\Providers\\MailerProvider"
+            ],
+            "aliases": {
+                "Mailer": "Samcbdev\\MailNotifier\\Facades\\MailerFacade"
+            }
+        }
+    }
+}
