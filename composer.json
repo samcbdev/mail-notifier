@@ -2,6 +2,7 @@
     "name": "samcbdev/mail-notifier",
     "description": "Mail template generation based on user's design with custom dynamic variables",
     "type": "library",
+    "keywords": ["mail notifier", "email notifications", "dynamic email templates"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
