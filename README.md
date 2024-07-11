@@ -27,7 +27,7 @@ A custom Laravel package for dynamic mail template creation and storage in a dat
 2. Vendor Publish
     Publish the package's configuration and other necessary files:
     ```sh
-    php artisan vendor:publish --tags="mail-notifier"
+    php artisan vendor:publish --tag="mail-notifier"
     ```
 3. Migration Run
     Run the database migrations to create the necessary tables:
