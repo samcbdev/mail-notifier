@@ -67,7 +67,8 @@ A custom Laravel package for dynamic mail template creation and storage in a dat
         ],
         'title' => 'Title',
         'subject' => 'Subject',
-        'content' => 'Content'
+        'content' => 'Content',
+        'status' => 1
     ];
 
     $setUnique = ['template_unique_id', 'custom_fields->comp_id'];
@@ -85,7 +86,8 @@ A custom Laravel package for dynamic mail template creation and storage in a dat
         ],
         'title' => 'Title',
         'subject' => 'Subject',
-        'content' => 'Content'
+        'content' => 'Content',
+        'status' => 2
     ];
 
     $setUnique = ['template_unique_id', 'custom_fields->comp_id'];

@@ -5,7 +5,6 @@ namespace Samcbdev\MailNotifier;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Samcbdev\MailNotifier\Jobs\SendEmailJob;
 use Samcbdev\MailNotifier\Models\MailNotifier;
@@ -107,7 +106,7 @@ class Mailer
             $mailer->title = $data['title'];
             $mailer->subject = $data['subject'];
             $mailer->content = $data['content'];
-            $mailer->status = 1;
+            $mailer->status = $data['status'] ?? 1;
             $mailer->save();
 
             // Retrieve the newly created record
@@ -176,6 +175,11 @@ class Mailer
         $mailer->title = $data['title'];
         $mailer->subject = $data['subject'];
         $mailer->content = $data['content'];
+
+        if(isset($data['status'])) {
+            $mailer->status = $data['status'];
+        }
+
         $mailer->save();
 
         return response()->json([
