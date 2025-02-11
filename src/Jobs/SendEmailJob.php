@@ -37,7 +37,7 @@ class SendEmailJob implements ShouldQueue
                 ->cc($this->details['cc'] ?? null)
                 ->bcc($this->details['bcc'] ?? null);
 
-            $mail->send(new HandleMail(
+            $mail->queue(new HandleMail(
                 [
                     'subject' => $this->details['subject'],
                     'content' => $this->details['content'],

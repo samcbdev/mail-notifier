@@ -12,7 +12,7 @@ use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
 
-class HandleMail extends Mailable
+class HandleMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

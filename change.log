@@ -10,4 +10,7 @@
     - Mail Notifier Package Implemented
 
 ## [1.0.1] - 2025-01-06
-    - status field updated
+    - Status field updated
+
+## [1.0.2] - 2025-02-11
+    - Queue Added for Handle Mail Notification
